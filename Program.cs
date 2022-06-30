@@ -10,6 +10,22 @@ namespace ProjectExample
             (int a, string b) c = (5, "deneme");
             Console.WriteLine(c.a);
             #endregion
+
+            #region Değişken Türüne Uygun Default Değer Atama
+            bool x = default(bool);//değişkene default değerini atamak için kullanılır.
+            int y = default(int);
+            string z = default(string);
+            char d = default(char);
+
+            //main içerisinde oluşturulan değişkenlerin ilk değerlerini manuel atmaya özen göstermeliyiz.
+
+            #endregion
+            #region Default Literals Default değer atama(C# 7.1)
+            bool e = default;
+            decimal u = default;
+            //7.1'den sonra bu şekilde yazmamz yeterli 
+            #endregion
+
         }
     }
 }
