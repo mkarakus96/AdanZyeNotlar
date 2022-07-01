@@ -15,7 +15,12 @@ namespace ProjectExample
             mesaj = medeniHal ? evli : bekar;
             Console.WriteLine(mesaj);
             #endregion
+            #region Birden Fazla Condition Uygulama
+            int yas = 25;
 
+            string sonuc = yas < 25 ? "A" : (yas == 25 ? "B" : "C");
+            Console.WriteLine(sonuc);
+            #endregion
             //#region (_a, _b) =(a, b) Tuple Türüyle Değer Atama
             //(int a, string b) c = (5, "deneme");
             //Console.WriteLine(c.a);
