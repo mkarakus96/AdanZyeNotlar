@@ -7,20 +7,32 @@ namespace ProjectExample
         static void Main(string[] args)
         {
 
-            #region Ternary Operatoru
-            bool medeniHal = false;
-            string evli = "evli";
-            string bekar = "bekar";
-            string mesaj;
-            mesaj = medeniHal ? evli : bekar;
-            Console.WriteLine(mesaj);
-            #endregion
-            #region Birden Fazla Condition Uygulama
-            int yas = 25;
 
-            string sonuc = yas < 25 ? "A" : (yas == 25 ? "B" : "C");
-            Console.WriteLine(sonuc);
+            #region Switch Expressions 
+            int i = 10;
+            string isim = i switch
+            {
+                5 => "Hilmi",
+                7 => "Ahmet",
+                10 => "Mehmet",
+            };
+
+
             #endregion
+            //#region Ternary Operatoru
+            //bool medeniHal = false;
+            //string evli = "evli";
+            //string bekar = "bekar";
+            //string mesaj;
+            //mesaj = medeniHal ? evli : bekar;
+            //Console.WriteLine(mesaj);
+            //#endregion
+            //#region Birden Fazla Condition Uygulama
+            //int yas = 25;
+
+            //string sonuc = yas < 25 ? "A" : (yas == 25 ? "B" : "C");
+            //Console.WriteLine(sonuc);
+#endregion
             //#region (_a, _b) =(a, b) Tuple Türüyle Değer Atama
             //(int a, string b) c = (5, "deneme");
             //Console.WriteLine(c.a);
